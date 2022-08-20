@@ -1,0 +1,283 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap";
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    color: #141414;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #888;
+    overflow-x: hidden;
+    font-size: 15px;
+}
+
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: calc(1.3rem + .6vw);
+}
+
+@media (min-width:1200px) {
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+h4 {
+    font-size: calc(1.275rem + .3vw);
+}
+
+@media (min-width:1200px) {
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul ul {
+    margin-bottom: 0;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    margin-top: var(--bs-gutter-y);
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .col-md-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.3333333333%;
+    }
+
+    .offset-lg-1 {
+        margin-left: 8.3333333333%;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3,
+h4 {
+    font-weight: 600;
+    margin: 0;
+    color: #bbbbbb;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 450px;
+    }
+}
+
+.section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    background-color: #212529;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.blog-single {
+    background: #141414;
+}
+
+.blog-single .single-inner .main-content-head {
+    -webkit-box-shadow: 0 1px 20px 0 rgba(32, 32, 32, .11);
+    box-shadow: 0 1px 20px 0 rgba(32, 32, 32, .11);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blog-single .meta-information {
+    text-align: center;
+    background-color: #0e0e0e;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.blog-single .detail-inner {
+    background-color: #101010;
+    padding: 40px;
+}
+
+@media (max-width: 767px) {
+    .blog-single .detail-inner {
+        padding: 25px;
+    }
+}
+
+.blog-single .post-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 32px;
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .blog-single .post-title {
+        line-height: 26px;
+    }
+}
+
+.blog-single p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+.blog-single h3 {
+    font-size: 20px;
+   
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.blog-single .list {
+    margin: 30px 0;
+}
+
+.blog-single .list li {
+    display: block;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.blog-single .list li:last-child {
+    margin-bottom: 0;
+}
