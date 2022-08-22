@@ -108,7 +108,7 @@ p {
           transform: translate(-50%, -50%);
 }
 
-#wrngpass > p {
+#err-tgg > p {
   text-align: center; 
   padding-bottom: 10px;
   color: #bb1b48;
